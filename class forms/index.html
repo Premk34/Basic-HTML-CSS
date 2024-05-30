@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Enter Your Name</label>
+        <br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Jhon Doe"
+          autofocus="true"
+          autocomplete="off"
+         required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  /><br /><br />
+        <label for="age">Enter Your Age</label>
+        <br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="0"
+          max="10"
+          step="2"
+          placeholder="eg 21"
+          required/><br /><br />
+        <label for="dob">Enter Your DOB</label>
+        <br />
+        <input type="date" id="dob" min="2021-1-2" max="2022-2-2" /><br /><br />
+        <fieldset>
+          <legend>Radio and checkbox</legend>
+          <label>Enter Your Gender</label>
+          <br /><br />
+          <label for="male">Male</label>
+          <input type="radio" value="male" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="others">others</label>
+          <input type="radio" name="gender" value="others" id="others" />
+          <br /><br />
+          <label>Enter Your Fav Animal</label>
+          <br /><br />
+          <label for="dog">Dog</label>
+          <input type="checkbox" name="animal" value="dog" id="dog" />
+          <label for="cat">Cat</label>
+          <input type="checkbox" name="animal" value="cat" id="cat" />
+
+          <input type="color" />
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Files</legend>
+        <label for="files">Upload Your File</label>
+        <input type="file" accept=".jpg .png" />
+      </fieldset>
+
+      <select name="country" required>
+        <option selected disabled>Select your Country</option>
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="USA">USA</option>
+      </select>
+
+      <!-- <button >Click</button> -->
+      <input type="submit" value="click me">
+    </form>
+  </body>
+</html>
